@@ -4,14 +4,17 @@ Your challenge, if you wish to accept it (and we sure hope you will), is to opti
 
 CHALLENGE ACCEPTED:
   Current PageSpeed Score:
+  ```bash
     Mobile:
       86/100   Speed
       100/100  User Experience
-
+   ```
+   ```bash
     Desktop:
     92/100   Speed
     100/100  User Experience
-
+   ```
+   
   Improvements made:
     Placed fonts into style.css file, removing the request
     Minified the css file
