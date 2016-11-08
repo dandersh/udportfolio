@@ -2,6 +2,24 @@
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
 
+CHALLENGE ACCEPTED:
+  Current PageSpeed Score:
+    Mobile:
+      86/100   Speed
+      100/100  User Experience
+
+    Desktop:
+    92/100   Speed
+    100/100  User Experience
+
+  Improvements made:
+    Placed fonts into style.css file, removing the request
+    Minified the css file
+    Placed print styles into print.css file and set the media query to 'print' so as to not block rendering on download
+    Moved analytics javascript to an external file and set the defer attribute so it does not execute until the page is ready
+    Removed small images in main page as they were not essential to the UX.
+
+
 ### Getting started
 
 Some useful tips to help you get started:

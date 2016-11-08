@@ -6,23 +6,20 @@
     <meta name="description" content=" FILL ME IN ">
     <meta name="author" content=" FILL ME IN ">
     <title>Cameron Pittman: Portfolio</title>
+      <!-- Hmm, what is the impact of web fonts on speed? Measure it... -->
+      <!--dandersh: added these font families to style.css to eliminate extra request. Next step would be to utilize Font Loading API to defer rendering of fonts-->
+      <!-- <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">-->
 
-    <!-- Hmm, what is the impact of web fonts on speed? Measure it... -->
-    <!-- <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> -->
-
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/print.css" rel="stylesheet">
-
-    <script>
-      (function(w,g){w['GoogleAnalyticsObject']=g;
-      w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();})(window,'ga');
-
-      // Optional TODO: replace with your Google Analytics profile ID.
-      ga('create', 'UA-XXXX-Y');
-      ga('send', 'pageview');
-    </script>
-    <script src="//www.google-analytics.com/analytics.js"></script>
-    <script src="js/perfmatters.js"></script>
+      <!-- dandersh: Minified the CSS -->
+      <link href="css/style-min.css" rel="stylesheet" />
+      <!-- dandersh: Add print media query so rendering is not blocked when the browser downloads the file -->
+      <link href="css/print.css" rel="stylesheet" media="print" />
+      <!-- dandersh: Move analytics script away from inline to an external script with the async attribute to defer loading until after
+      DOM/CSSOM are rendered-->
+      <script src="js/analytics.js" async></script>
+      <!--dandersh: Add defer attribute to defer rendering of analytic script that is not required for rendering -->
+      <script defer src="http://www.google-analytics.com/analytics.js"></script>
+      <script async src="js/perfmatters.js"></script>
   </head>
 
   <body>
